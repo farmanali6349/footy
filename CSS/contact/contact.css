@@ -1,0 +1,147 @@
+/* ------------------------------------------ CONTACT -------------------------------- */
+.contact-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.contact-row .left {
+    flex-basis: 40%;
+}
+
+.contact-row .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-row .right {
+    flex-basis: 60%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-row .right form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.contact-row .right form div {
+    width: 100%;
+    border: 1px solid;
+}
+
+.contact-row .right input, .contact-row .right textarea {
+    padding: 9px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    top: -3px;
+    left: -3px;
+}
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact-row .right form .button-top {
+    padding: 10px 20px;
+    font-size: 18px;
+    transform: translate(-5px -5px);
+}
+
+.contact-row .right form .button-top:hover {
+    transform: translate(-1px -1px);
+
+}
+/* ------------------------------------------ BRANCHES -------------------------------- */
+.branches-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+}
+
+.branches-row .search {
+    border: 1px solid black;
+    width: 90%;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.branches-row .search input {
+    width: 90%;
+    height: 100%;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.branches-row .search img {
+    width: 50px;
+}
+
+.branches-row table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.branches-row table, .branches-row table th, .branches-row table tr, .branches-row table td {
+    border: 2px solid #0000004d;
+    padding: 10px;
+}
+
+.branches-row table thead {
+    background-color: rgba(128, 128, 128, 0.345);
+    text-transform: uppercase;
+}
+
+.branches-row table tbody tr:nth-child(even) {
+    background-color: #615d5d19;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-row .left {
+        display: none;
+    }
+
+    .contact-row .right {
+        flex-basis: 100%;
+    }
+
+    
+    
+}
+@media only screen and (max-width: 480px) {
+
+    section .title h2 {
+        font-size: 25px;
+        line-height: 32px;
+        word-spacing: 0.5px;
+    }
+    section .title h2 span {
+        font-size: 35px;
+    }
+    .branches-row {
+        padding: 10px 15px;
+    }
+    input, textarea {
+        padding: 5px;
+        font-size: 14px;
+    }
+    .branches-row table, th, tr, td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}

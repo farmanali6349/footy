@@ -1,0 +1,173 @@
+.products-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.products-row .col.left {
+    flex-basis: 20%;
+    padding: 0 0px;
+    border-right: 1px solid #57555565;
+    border-top: 1px solid #57555565;
+    text-transform: uppercase;
+    height: 700px;
+    overflow-y: scroll;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+.products-row .col.left::-webkit-scrollbar {
+    width: 7px;
+    margin-left: 50x;
+}
+
+.products-row .col.left::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    display: none;
+}
+
+.products-row .col.left::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.products-row .col.left::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.products-row .col.left h2 {
+    font-size: 25px;
+    font-family: Nimbus Sans Becker PBla;
+    letter-spacing: 1px;
+    padding: 10px 0px 10px 20px;
+}
+
+.products-row .col.left ul {
+    list-style-type: none;
+}
+
+.products-row .col.left ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #57555565;
+    transition: background 0.3s;
+}
+
+.products-row .col.left ul.category li {
+    cursor: pointer;
+}
+
+.products-row .col.left ul li:nth-child(1) {
+    border-top: 1px solid #57555565;
+}
+
+.products-row .col.left ul.category li:hover {
+    background-color: #d9cbcb;
+}
+.products-row .col.left ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 0 10px 20px;
+    font-size: 20px;
+}
+
+ul.filters li{
+    padding: 10px 20px;
+}
+
+ul.filters li {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start !important;
+    gap: 10px;
+}
+
+ul.filters .colors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+ul.filters .colors .color {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul.filters .colors .color:nth-child(1) {
+    background-color: white;
+    border: 0.5px solid;
+}
+ul.filters .colors .color:nth-child(2) {
+    background-color: black;
+
+}
+ul.filters .colors .color:nth-child(3) {
+    background-color: green;
+    border: 2px solid #fff;
+    outline: 3px solid rgba(0, 128, 0, 0.507);
+}
+ul.filters .colors .color:nth-child(4) {
+    background-color: blue;
+}
+ul.filters .colors .color:nth-child(5) {
+    background-color: purple;
+}
+ul.filters .colors .color:nth-child(6) {
+    background-color: orange;
+}
+ul.filters .colors .color:nth-child(7) {
+    background-color: green;
+}
+ul.filters .colors .color:nth-child(8) {
+    background-color: red;
+}
+ul.filters .colors .color:nth-child(9) {
+    background-color: yellow;
+}
+ul.filters .colors .color:nth-child(10) {
+    background-color: pink;
+}
+
+ul.filters li select {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #0000006e;
+    outline: none;
+    display: inline-block;
+}
+
+ul.filters li div.flex {
+    display: flex;
+}
+
+ul.filters li div.flex.column {
+    flex-direction: column;
+}
+
+ul.filters li input {
+    padding: 5px 5px 5px 13px;
+    border: 1px solid #0000006e;
+    outline: none;
+    width: 80px;
+}
+
+ul.filters li input + span {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.products-row .col.right {
+    flex-basis: 78%;
+    display: flex;
+}
