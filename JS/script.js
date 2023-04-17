@@ -34,6 +34,17 @@ for (let i=0; i<subMenu.length; i++) {
     subMenu[i].style.display = 'none';
 }
 
+// logo to home page
+const logo = document.getElementsByClassName('logo');
+
+for(let i=0; i<2; i++) {
+    logo[i].addEventListener('click', goHome);
+}
+
+function goHome() {
+    window.location.href = '../index.html';
+}
+
 // - inner SUB MENU -
 for (let i=0; i<innerSubMenu.length; i++) {
     innerSubMenu[i].style.display = 'none';
