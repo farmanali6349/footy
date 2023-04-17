@@ -110,6 +110,10 @@ section .title h2 span {
     margin: auto;
 }
 
+.logo{
+    cursor: pointer;
+}
+
 .logo h1 {
     font-family: 'Nimbus Sans Becker PBla', sans-serif;
     font-size: 37px;
