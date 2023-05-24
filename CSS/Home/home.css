@@ -1215,6 +1215,11 @@ div.sub .row .col-4 .product button:hover {
     font-size: 14px;
 }
 
+#copyright p a{
+    color : blue;
+    text-decoration : underline;
+}
+
 /* ------------------------------------------------------- CSS FOR TAB ----------------------------------- */
 
 @media only screen and (max-width: 768px) {
